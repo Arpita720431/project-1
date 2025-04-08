@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Authentication</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Secure Your Products with Blockchain</h1>
+        <p>Verify product authenticity in seconds using blockchain technology.</p>
+    </header>
+
+    <div class="container">
+        <h2>Product Authentication</h2>
+        
+        <!-- Introduction Section -->
+        <p>Enter the blockchain record URL below to check the authenticity of your product.</p>
+
+        <label for="blockchainURL">Enter Blockchain Record URL:</label>
+        <input type="text" id="blockchainURL" placeholder="https://api.jsonbin.io/v3/b/your_bin_id">
+        
+        <button onclick="verifyProduct()">Verify Product</button>
+        <p id="result"></p>
+
+        <!-- Features Section -->
+        <div class="features">
+            <h3>Why Use Our Authentication System?</h3>
+            <ul>
+                <li>✔️ Instant verification</li>
+                <li>✔️ Secure blockchain-backed records</li>
+                <li>✔️ Protection against counterfeit products</li>
+            </ul>
+        </div>
+
+        <!-- User Testimonials -->
+        <div class="testimonials">
+            <h3>What Our Users Say</h3>
+            <p><strong>John Doe:</strong> "This authentication system saved me from buying a fake product!"</p>
+            <p><strong>Sarah Smith:</strong> "Very easy to use and reliable. Highly recommend!"</p>
+        </div>
+
+        <!-- Dark Mode Toggle -->
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Ensuring trust and transparency in product verification.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Dark Mode Toggle Function
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
